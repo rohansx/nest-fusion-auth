@@ -5,7 +5,7 @@ import { Response } from 'express';
 @Controller('auth')
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
-
+  //post request
   @Post('signup')
   async signup(
     @Body('email') email: string,
